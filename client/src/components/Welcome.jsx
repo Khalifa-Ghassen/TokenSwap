@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext ,useState } from "react";
 import { AiFillPlayCircle } from "react-icons/ai";
 import { SiEthereum } from "react-icons/si";
 import { BsInfoCircle } from "react-icons/bs";
@@ -112,6 +112,13 @@ const Welcome = () => {
                   Send now
                 </button>
               )}
+          </div>
+          <div className="p-5 sm:w-96 w-full flex flex-col justify-start items-center blue-glassmorphism mt-5">
+            <h2 className="text-white text-lg font-semibold mb-2">Transaction Details</h2>
+            <p className="text-white text-sm">Address To: {formData.addressTo}</p>
+            <p className="text-white text-sm">Amount: {formData.amount} ETH</p>
+            <p className="text-white text-sm">Keyword: {formData.keyword}</p>
+            <p className="text-white text-sm">Message: {formData.message}</p>
           </div>
         </div>
       </div>
